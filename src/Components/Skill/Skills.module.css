@@ -1,0 +1,143 @@
+.Skill_component__space{
+    background-color:#e3e2de;
+    margin-top: -20px;
+}
+
+h1.heading {
+    font-size: 60px;
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+p.heading.p__color {
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+.container .indivitual{
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .indivitual span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background:whitesmoke;
+    border-radius: 30%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .indivitual span img{
+    line-height: 30px;
+
+}
+.container .indivitual .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #ff004f;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .indivitual:hover .tooltip{
+    top: -45px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.indivitual .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #ff004f;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%)rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .indivitual:hover span{
+    color: #fff;
+}
+.Techskills,.Tools{
+    margin: 50px -25px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 40px;
+}
+.Techskills img:hover,.Tools img:hover {
+    transform: scale(1.2)
+}
+.Techskills img,.Tools img{
+    width: 100px;
+    transition: transform 0.5s;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1024px){
+    .Skill__box {
+        padding: 30px;
+    }
+    .Tools img,.Techskills img{
+        margin: auto;
+        width: 70px;
+    }
+    .Tools{
+        gap: 6px;
+    }
+    .Techskills,.Tools{
+        margin: 70px 30px;
+        height: 150px;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 768px){
+    .Tools img,.Techskills img{
+        margin: auto;
+        width: 100px;
+    }
+    .Techskills,.Tools{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+        justify-content: space-evenly;
+        column-gap: 40px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .Tools img,.Techskills img{
+        margin: auto;
+        width: 100px;
+    }
+    .Techskills,.Tools{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        justify-content: space-evenly;
+        column-gap: 40px;
+        height: 500px;
+    }
+}

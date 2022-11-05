@@ -1,0 +1,120 @@
+section{
+    padding-top: 10px;
+    /* border: 1px solid black; */
+    background-color: white;
+    color: black;
+    /* padding-bottom: 30px; */
+    margin-top: -65px;
+  }
+  .about{
+    background:#e3e2de ;
+  }
+  section .content{
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .aboutdetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  section .title span{
+    /* color: #0E2431; */
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  section .title span::before,
+  section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    /* background: #4070f4; */
+    left: 0;
+    bottom: 0;
+  }
+  section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about .aboutdetails .left{
+    width: 45%;
+  }
+  .about .left img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .aboutdetails .right{
+    width: 55%;
+  }
+  section  .topic{
+    /* margin-top: 30px; */
+    /* color: #0E2431; */
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:blue;
+  }
+  .aboutdetails .right p{
+    text-align: justify;
+    /* color: #0E2431; */
+    font-size: 20px;
+  }
+  section .button{
+    margin: 16px 0;
+  }
+  section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #9b1750;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  section .button button:hover{
+    border-color: #9b1750;
+    background-color: #fff;
+    color:#9b1750;
+  }
+/* RESPONSIVE */
+@media only screen and (max-width: 1024px){
+    .p__color{
+        font-size: 13px!important;
+        padding-right: 3%;
+        justify-content: safe;
+    }
+}
+@media only screen and (max-width: 768px){
+    .p__color{
+        font-size: 18px!important;
+    }
+}
+@media only screen and (max-width: 425px){
+    button.about.btn.pointer {
+        text-transform: capitalize;
+        width: 165px;
+        height: 50px;
+        font-size: 13px;
+        transition: .4s ease;
+        margin-right: 15%;
+    }
+    .row{
+        margin-left: 6%;
+    }
+}
