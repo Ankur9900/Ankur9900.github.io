@@ -22,9 +22,9 @@ const AboutMe = () => {
               <p >
                 I have done my Electrical Engineering. Later on, IT Sector's growth cought my interest and I transformed myself as a Full Stack Web Developer by joining Masai School in April 2022. 
               </p>
-              <p >
+              {/* <p >
                I want to expertise myself as a Full Stack Web Developer in the upcoming years with React JS technology.
-              </p>
+              </p> */}
           </div>
         </div>
       </div>

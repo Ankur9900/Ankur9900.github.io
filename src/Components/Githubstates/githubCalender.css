@@ -1,0 +1,48 @@
+.github_calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-top: 2rem;
+}
+.github_calendar footer{
+    background: transparent;
+    padding: 1rem 0rem;
+    font-size: 0.9rem;
+}
+.git_stats img{
+  background: var(--color-bg-variant);
+  /* background-color: white; */
+  width: 100%;
+  object-fit: cover;
+}
+.github_status>div{
+    padding: 0rem 0rem;
+}
+.experience_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section {
+    padding-top: 5rem;
+  }
+  
+  
+  section>h2,
+  section>h5 {
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 26px;
+    
+  }
+  
+  section>h2 {
+    color: black;
+    margin-bottom: 3rem;
+  }
